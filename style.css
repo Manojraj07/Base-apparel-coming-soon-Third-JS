@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(201, 201, 201);
+}
+
+.container {
+  max-width: 100rem;
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: #fff;
+}
+
+.img-girl {
+  width: 40rem;
+  height: 100%;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 6rem 12rem 2rem 12rem;
+  background-image: url("images/bg-pattern-desktop.svg");
+}
+
+.img-logo {
+  width: 15rem;
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  line-height: 5.5rem;
+  font-weight: 400;
+  color: hsl(0, 6%, 24%);
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(0, 36%, 70%);
+  line-height: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.form {
+  position: relative;
+}
+
+#email {
+  width: 90%;
+  height: 4rem;
+  border: solid 0.01rem rgb(206, 151, 151);
+  border-radius: 4rem;
+  padding-left: 2rem;
+  background-color: rgba(206, 151, 151, 0.01);
+  transition: all 0.35s;
+}
+
+#email::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgb(206, 151, 151);
+}
+
+button {
+  width: 7.2rem;
+  height: 4rem;
+  border: solid 0rem rgb(206, 151, 151);
+  border-radius: 4rem;
+  position: absolute;
+  right: 1.5%;
+  top: -1%;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+button:hover {
+  background-image: linear-gradient(135deg, hsl(0, 86%, 92%), hsl(0, 88%, 90%));
+}
+
+span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 200;
+}
+
+.error {
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  font-size: 1.3rem;
+  opacity: 0;
+  transition: all 0.35s;
+  pointer-events: none;
+  cursor: default;
+}
+
+.red-mark {
+  position: absolute;
+  right: 23%;
+  top: 13%;
+  opacity: 0;
+  transition: all 0.35s;
+  pointer-events: none;
+  cursor: default;
+}
+
+.xmark {
+  opacity: 1;
+}

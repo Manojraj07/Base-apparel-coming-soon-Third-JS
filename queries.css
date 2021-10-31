@@ -1,0 +1,76 @@
+@media (max-width: 63em) {
+  .container {
+    max-width: 40rem;
+    grid-template-columns: 1fr;
+    position: relative;
+    background-color: hsl(0, 100%, 97%);
+  }
+  .section-img {
+    grid-row: 1/2;
+    margin-top: 12rem;
+  }
+  .img-girl {
+    height: 35rem;
+    object-position: top;
+    object-fit: cover;
+  }
+  .section-text {
+    width: 40rem;
+    padding: 4rem 2rem 4rem 2rem;
+    align-items: center;
+  }
+
+  .title,
+  .paragraph {
+    text-align: center;
+  }
+
+  .img-logo {
+    position: absolute;
+    top: 0;
+    align-self: flex-start;
+    padding-top: 3rem;
+  }
+
+  #email {
+    width: 30rem;
+  }
+
+  button {
+    right: -1%;
+    top: 0.5%;
+  }
+  .red-mark {
+    right: 25%;
+  }
+}
+
+@media (max-width: 35em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 30rem;
+  }
+
+  .img-girl {
+    width: 30rem;
+  }
+
+  .section-text {
+    width: 30rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  #email {
+    width: 22rem;
+  }
+
+  .red-mark {
+    right: 34%;
+    top: 8%;
+  }
+}
